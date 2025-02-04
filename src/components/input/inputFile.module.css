@@ -1,0 +1,47 @@
+.inputFile {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    display: block;
+}
+
+.contentFile {
+    display: flex;
+    align-items: center;
+}
+
+.fileItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.btnFile {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    height: 24px;
+}
+
+.btnFile:focus, .btnFile:focus-visible {
+    outline: none;
+}
+
+.labelFile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.iconFile {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #F4F4F4;
+    margin-right: 12px;
+}

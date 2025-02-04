@@ -1,0 +1,54 @@
+
+.options {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    display: block;
+    background-color: white;
+    box-shadow:  0 10px 30px rgba(80, 86, 131, 10%);
+}
+
+.option {
+    position: relative;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.option::before {
+    position: relative;
+    content: "";
+    width: 24px;
+    height: 24px;
+}
+
+.optionInput:checked + .option, .option:hover {
+    background-color: #F4F4F4;
+}
+
+.optionInput:checked + .option::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 11' fill='none' %3E%3Cpath d='M5.66874 11.0009L0.0212402 5.97505L1.26935 4.51326L5.46463 8.24797L11.8839 0.515381L13.3342 1.76882L5.66874 11.0009Z' fill='%23191B1D'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 14px 11px;
+    background-position: center;
+}
+
+.inputSelect + .options {
+    display: none;
+}
+
+.inputSelect:checked + .options {
+    display: block;
+}
+
+.inputSelectText {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 6' fill='none'%3E%3Cpath d='M1 1L4.00002 4L7 1' stroke='%231B1D21' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 7px) center ;
+}

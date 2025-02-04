@@ -1,0 +1,18 @@
+.canvas canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+}
+
+.canvas > div {
+    position: absolute !important;
+    /* top: 10%; */
+    max-width: 800px;
+    max-height: 800px;
+}

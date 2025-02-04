@@ -1,0 +1,131 @@
+:root {
+  --accent:  253, 208, 112;
+}
+
+html, body {
+  width: 100%;
+  min-width: 540px;
+}
+
+body {
+  background: #B7BABE;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #191B1D;
+}
+
+p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 6' fill='none'%3E%3Cpath d='M1 1L4.00002 4L7 1' stroke='%231B1D21' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center ;
+  cursor: pointer;
+  font-size: inherit; 
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+option { font-weight:normal; } 
+
+textarea {
+  resize: none;
+  font-family: "Manrope", serif;
+  font-weight: inherit;
+}
+
+input, select {
+  font-family: "Manrope", serif;
+  font-weight: inherit;
+}
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* START Form default styles  */
+
+.inputContainer {
+  --cl-text: #191B1D;
+  --cl-text-secondary:#B7BABE;
+  --cl-border: #F4F4F4;
+  position: relative;
+  padding-top: 28px;
+}
+
+.inputContainer.error  {
+  --cl-text: #EB5757;
+  --cl-text-secondary: #EB5757;
+  --cl-border: #EB5757;
+}
+
+.input, .input::placeholder, .label {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #191B1D;
+  min-height: 52px;
+  color: var(--cl-text);
+}
+
+.input {
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--cl-border);
+}
+
+
+.input:active ,.input:focus-visible{
+  border: none;
+  border-bottom: 1px solid var(--cl-border);
+  outline: none;
+}
+
+.label {
+  cursor: pointer;
+  position: absolute;    
+  top: 47%;
+  left: 16px;
+  z-index: 1;
+  /* transform: translate3d(0, 0, 0); */
+  transition: top 0.5s ease-in;
+}
+
+.input:focus-visible + .label, .input:not(:placeholder-shown) + .label, .label.top  {
+  color: var(--cl-text-secondary);
+  line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  top: 12%;
+  /* transform: translate3d(0, -50%, 0); */
+}
+
+textarea.input {
+  overflow: hidden;
+}
+
+/* END Form default styles  */

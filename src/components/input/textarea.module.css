@@ -1,0 +1,9 @@
+.error  {
+    --cl-text: #EB5757;
+    --cl-text-secondary: #EB5757;
+    --cl-border: #EB5757;
+}
+
+.textarea {
+    padding-top: 17px;
+}
