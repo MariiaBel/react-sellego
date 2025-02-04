@@ -22,7 +22,7 @@ function App() {
                 <div className={styles.componentItem}>
                     <div className={styles.canvasPosition}>
                         <ModelRotating
-                            url={"/models/fox.fbx"}
+                            url={"./models/fox.fbx"}
                             scale="0.04"
                         ></ModelRotating>
                     </div>
