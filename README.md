@@ -2,7 +2,7 @@
 
 The project was created by [MariiaBel](https://smartcall-mariiabel.vercel.app/). <br />
 Contact: [@MariiaBel](https://t.me/MariiaBel)
-
+Demo: [githubPage](https://mariiabel.github.io/react-sellego/dist/)
 
 ## Setup
 
